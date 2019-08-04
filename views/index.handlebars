@@ -1,0 +1,27 @@
+<h1>Eat-Da-Burger!</h1>
+
+<!-- Add a box to add a new burger with a submit button!-->
+
+<!--add a devoured button which would change the devoured boolean based on the burger id to true!-->
+
+<!--left column, display all from burgers table IF devoured = false!-->
+<!-- Pass in data from server.js -->
+<ul>
+    {{#each burger}}
+    <li>
+        <p>{{this.burger_name}}</p>
+       
+        <button data-id="{{this.id}}" class="delquote">Devour</button>
+
+        <a href="/{{this.id}}">Update this quote</a>
+    </li>
+    {{/each}}
+</ul>
+
+<!--right column, display all from burgers table IF devoured = true!-->
+
+
+<script type="text/javascript">
+
+
+</script>
